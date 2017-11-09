@@ -341,7 +341,8 @@ class Client
             'headers' => [
                 'Authorization' => 'Bearer ' . $this->accessToken->getToken(),
                 'Content-Type' => 'application/json',
-                'x-li-format' => 'json'
+                'x-li-format' => 'json',
+                'x-li-src' => 'msdk'
             ]
         ]);
         $uri = $endpoint;
